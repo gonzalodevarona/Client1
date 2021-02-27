@@ -68,13 +68,13 @@ public class Cliente {
 				
 				switch (choice) {
 				case 1:
-					answer = "ip \n";
+					answer = "1 \n";
 					break;
 				case 2:
-					answer = "interface \n";			
+					answer = "2 \n";			
 					break;
 				case 3:
-					answer = "hora \n";
+					answer = "3 \n";
 					break;
 				case 4:
 					System.out.println("");
@@ -129,11 +129,12 @@ public class Cliente {
 				if (choice == 1 || choice == 2 ||  choice == 3) {
 					bWriter.write(answer);
 					bWriter.flush();
+					System.out.println(bReader.readLine());
 					
 					
 				}
 				
-				System.out.println(bReader.readLine());
+				
 				
 				
 				
